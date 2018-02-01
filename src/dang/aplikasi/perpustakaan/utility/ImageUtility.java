@@ -11,6 +11,9 @@ import java.awt.GradientPaint;
 import java.awt.Graphics2D;
 import java.awt.Image;
 import java.awt.image.BufferedImage;
+import java.net.URI;
+import javax.swing.ImageIcon;
+import javax.swing.JLabel;
 
 /**
  *
@@ -50,4 +53,11 @@ public final class ImageUtility {
   public static final BufferedImage convertToBufferedImageReflection(Image source)  {
     return convertToBufferedImageReflection(convertToBufferedImage(source));
   }
+  
+  public static final ImageIcon setImgResize(ImageIcon imgicon,int widthimg,int heightimg) {
+        Image img=imgicon.getImage();
+        Image newimg=img.getScaledInstance(widthimg, heightimg, Image.SCALE_SMOOTH);
+        ImageIcon myimage=new ImageIcon(newimg);
+        return myimage;
+    }
 }

@@ -5,7 +5,9 @@
  */
 package dang.aplikasi.perpustakaan;
 
+import dang.aplikasi.perpustakaan.entity.User;
 import dang.aplikasi.perpustakaan.view.FrmLogin;
+import dang.aplikasi.perpustakaan.view.FrmMain;
 import dang.aplikasi.perpustakaan.view.FrmSplash;
 import java.util.logging.Level;
 import java.util.logging.Logger;
